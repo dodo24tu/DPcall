@@ -1,0 +1,490 @@
+html {
+	position: relative;
+	min-height: 100%;
+	scroll-behavior: smooth; /*prechod scrollovania*/
+}
+
+body {
+	min-height: 100%;
+	font-family: "Poppins", sans-serif;
+}
+
+.horizontal-center {
+	margin: 0 auto;
+}
+
+.form-control {
+	color: #0088aa;
+	font-weight: bold;
+}
+
+.form-control:focus {
+	border-color: #0088aa;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 136, 170, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 136, 170, 0.6);
+}
+
+input.btn {
+	font-weight: bold;
+}
+
+.btn {
+	font-weight: bold !important;
+}
+
+.btn-success {
+	background-color: #06d362 !important;
+	border-color: #06d362;
+}
+
+.btn-success:hover {
+	background-color: #1abd61 !important;
+	border-color: #1abd61;
+}
+
+.btn-info {
+	background-color: #0088aa !important;
+	border-color: #0088aa;
+}
+
+.btn-info:hover {
+	background-color: #00708c !important;
+	border-color: #00708c;
+}
+
+.btn-warning {
+	background-color: #ffcc00 !important;
+	border-color: #ffcc00;
+	color: #4d4d4d;
+}
+
+.btn-warning:hover {
+	background-color: #eabb3a !important;
+	border-color: #eabb3a;
+	color: #4d4d4d;
+}
+
+.btn-warning:active {
+	color: #4d4d4d;
+}
+
+.btn-warning:focus {
+	color: #4d4d4d;
+}
+
+.btn-warning:active:focus {
+	color: #4d4d4d;
+}
+
+.demo-logo {
+	margin: 0;
+	height: 22px;
+	float: left;
+	padding-right: 8px;
+}
+
+a:hover .demo-logo {
+	-webkit-filter: brightness(0.7);
+	filter: brightness(0.7);
+}
+
+#not-logged {
+	padding-top: 40px;
+}
+
+#img-div {
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+#img-div img {
+	height: 15%;
+}
+
+#logged {
+	width: 100%;
+}
+
+#session-header form {
+	display: inline-block;
+}
+
+#session-header input.btn {
+	float: right;
+}
+
+#session-title {
+	display: inline-block;
+	padding-right: 1%;
+	margin-right: 1%;
+}
+
+#session-header .form-control {
+	width: initial;
+	float: right;
+	margin: 18px 0px 0px 5px;
+}
+
+#video-container {
+	width: 100%;
+	max-height: 42%;
+	display: block;
+	overflow: hidden;
+}
+
+#video-container video.two {
+	max-width: 50%;
+}
+
+#video-container video.three {
+	max-width: 33.33%;
+}
+
+#video-container video.four {
+	max-width: 25%;
+}
+
+#video-container div {
+	position: absolute;
+	display: inline-flex;
+	margin-left: calc(-50% + 15px);
+}
+
+#video-container p {
+	display: inline-block;
+	background: #f8f8f8;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #777777;
+	font-weight: bold;
+	border-bottom-right-radius: 4px;
+}
+
+#video-container p.userName {
+	float: right;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 0px;
+	font-weight: lighter;
+	font-size: 12px;
+	background: #777777;
+	color: #f8f8f8;
+}
+
+video {
+	width: auto;
+    height: auto;
+    max-height: 100%;
+    object-fit: scale-down;
+	border: 0.2em solid black; 
+}
+
+#session img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	object-fit: contain;
+	vertical-align: baseline;
+}
+
+#session #video-container img {
+	position: relative;
+	float: left;
+	width: 50%;
+	cursor: pointer;
+	object-fit: cover;
+	height: 160px;
+}
+
+table i {
+	cursor: pointer;
+	margin-left: 1em;
+}
+
+#tooltip-div {
+	text-align: left;
+}
+
+#tooltip-div hr {
+	margin: 5px 0;
+}
+
+#login-info {
+	text-align: right;
+}
+
+#login-info form {
+	display: inline;
+}
+
+#login-info div {
+	display: inline;
+	margin-right: 1em;
+}
+
+#name-user {
+	font-weight: bold;
+}
+
+#recording-btns {
+	display: inline-block;
+    padding-left: 15px;
+    padding-top: 20px;
+    width: 100%;
+    height: 40%;
+}
+
+#recording-btns .btns {
+	margin-top: 10px;
+}
+
+#recording-btns .btns .form-control {
+	width: initial;
+	display: inline;
+}
+
+#recording-btns .btns form {
+	display: inline;
+	margin-left: 5px;
+}
+
+#recording-btns textarea {
+	height: 100%;
+}
+
+.textarea-container {
+	position: relative;
+	display: inline-block;
+	height: 30%;
+	margin-top: 10px;
+	resize: none;
+}
+
+#textarea-http-container {
+	width: 50%;
+}
+
+#textarea-events-container {
+	width: 29%;
+}
+
+.textarea-container button {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	z-index: 1;
+}
+
+.textarea-container span {
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	padding: 3px;
+	border-bottom-right-radius: 4px;
+	z-index: 1;
+	color: #a5a5a5;
+	background-color: #ededee;
+	font-weight: 600;
+}
+
+.textarea-container textarea {
+	height: 100%;
+	resize: none;
+}
+
+/*    */
+
+.before-call{	
+	width: 80vh;
+	height: 40vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+	border-radius: 1vh;
+	border: 0.2em solid black; 
+}
+
+#session{
+	width: 170vh;
+	height: 80vh;
+	background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+
+#session-header{
+	padding-top: 3%;
+}
+
+.sess-name{
+	border: 0.2em solid whitesmoke; 
+	margin-top: 5vh;
+	font-size: 2vh;
+	background: transparent;
+	text-align: center;
+	width: 20vh;
+	height: 4vh;
+	box-sizing: border-box;
+}
+
+#join-btn{
+	background-color: whitesmoke;
+	color: black;
+	text-align: center;
+	width: 20vh;
+	height: 4vh;
+	font-size: 2vh;
+	box-sizing: border-box;
+}
+
+.leave-btn{
+	background-color: rgb(129, 24, 24);
+	color: whitesmoke;
+	text-align: center;
+	width: 10vh;
+	height: 4vh;
+	font-size: 2vh;
+	box-sizing: border-box;
+	border: 0.2em solid rgb(129, 24, 24);
+	border-radius: 0.5vh;
+	margin-top: 1%;
+}
+
+.leave-btn:hover{
+	background-color: rgb(167, 19, 19);
+	border: 0.2em solid rgb(167, 19, 19);
+	transition: 0.3s;
+	color: white;
+}
+
+.control-btn{
+	background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+	text-align: center;
+	width: 10vh;
+	height: 3vh;
+	font-size: 1.5vh;
+	box-sizing: border-box;
+	border-radius: 0.5vh;
+}
+
+.control-btn:hover{
+	background-color:rgb(170, 204, 186);
+	color: black;
+	transition: 0.3s;
+}
+
+#buttonStartRecording{
+	width: 25vh;
+}
+
+
+section {
+	height: 100vh;
+	position: relative;
+}
+a#scroll-btn, a#last-btn {
+	text-decoration: none;
+	color: whitesmoke;
+	text-align: center;  
+	line-height: 5vh;   
+	font-size: 2vh;
+}
+  
+h1{
+	font-size: 4vh;
+}
+h2{
+	font-size: 3vh;
+}
+h3{
+	font-size: 2.5vh;
+	font-style: italic;
+}
+  
+#section-1 {
+	background: url("images/tuke.jpg") no-repeat #2d8df8;;
+	background-size: cover; /*roztiahne obrazok na cely element*/
+	background-blend-mode: multiply;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+#scroll-btn, #last-btn {
+	position: absolute;
+	height: 7vh;
+	width: 20vh;
+	border: 0.5em solid whitesmoke;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 80%;
+	border-radius: 1vh;
+	text-align: center;
+	background: transparent;
+}
+
+#scroll-btn:hover, #last-btn:hover{
+	background-color: whitesmoke;
+	color: black;
+	transition: 0.3s;
+}
+
+#join-btn:hover{
+	color: #014421;
+	transition: 0.3s;
+}
+
+#section-2 {
+	background: url("images/videocall.jpg") no-repeat #111315;
+	background-size: cover; /*roztiahne obrazok na cely element*/
+	background-blend-mode: multiply;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+#section-3 {
+	background: url("images/call2.jpg") no-repeat #014421;
+	background-size: cover; /*roztiahne obrazok na cely element*/
+	background-blend-mode: multiply;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+  
+
+/* xs ans md screen resolutions*/
+
+@media screen and (max-width: 991px) {
+
+	#not-logged {
+		padding-top: inherit;
+	}
+
+	.container .navbar-header {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	#img-div {
+		padding-bottom: 1em;
+	}
+
+	#img-div img {
+		height: 10%;
+	}
+}
