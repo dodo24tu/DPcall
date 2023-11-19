@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth; /*prechod scrollovania*/
+}
+section {
+  height: 100vh;
+  position: relative;
+}
+a#scroll-btn {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;  
+  line-height: 5vh;   
+  font-size: 2vh;
+}
+
+h1{
+  font-size: 4vh;
+}
+h2{
+  font-size: 3vh;
+}
+h3{
+  font-size: 2.5vh;
+  font-style: italic;
+}
+
+#section-1 {
+  background: url("tuke.jpg") no-repeat #2d8df8;;
+  background-size: cover; /*roztiahne obrazok na cely element*/
+  background-blend-mode: multiply;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+#scroll-btn {
+  position: absolute;
+  height: 7vh;
+  width: 20vh;
+  border: 0.5em solid whitesmoke;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+  border-radius: 2vh;
+  text-align: center;
+}
+#section-2 {
+  background: url("videocall.jpg") no-repeat #111315;
+  background-size: cover; /*roztiahne obrazok na cely element*/
+  background-blend-mode: multiply;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+#section-3 {
+  background: url("call2.jpg") no-repeat #014421;
+  background-size: cover; /*roztiahne obrazok na cely element*/
+  background-blend-mode: multiply;
+  color: #ffffff;
+  text-align: center;
+  
+}

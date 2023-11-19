@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="shortcut icon" href="./img/kurento.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet"
+      href="webjars/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="webjars/ekko-lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="webjars/demo-console/index.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="webjars/jquery/dist/jquery.min.js"></script>
+    <script src="webjars/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="webjars/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <script src="webjars/draggabilly/draggabilly.pkgd.min.js"></script>
+    <script src="/webjars/webrtc-adapter/release/adapter.js"></script>
+    <script src="webjars/demo-console/index.js"></script>
+    <script src="./js/kurento-utils.js"></script>
+    <script src="index.js"></script>
+
+    <title>DP Web</title>
+   
+  </head>
+  <body>
+    <section id="section-1">
+      <a id="scroll-btn" href="#section-2">PODROBNOSTI</a>
+      <h1>TESTOVACIA APLIKÁCIA PRE ANALÝZU "PEER-TO-PEER" AUDIOVIZUÁLNEJ <br> KOMUNIKÁCIE ZALOŽENÁ NA BÁZE PLATFORMY KURENTO</h1>
+      <h2>Spracované na základe uvedených zdrojov pre akademické účely</h2>
+      <h3>Jozef Sedlák 2024</h3>
+    </section>
+    <section id="section-2">
+      <a id="scroll-btn" href="#section-3">ZAHÁJIŤ HOVOR</a>
+      <h1>HELLO THERE</h1>
+      <h2>Section 2</h2>
+    </section>
+    <section id="section-3">
+      <a id="scroll-btn" href="#section-1">SPÄŤ NA ÚVOD</a>
+
+      <!-- SEKCIA VIDEOHOVORU -->
+      <div class="right">
+        <div id="userInput">
+          <!-- <label class="control-label" for="name">Name</label>-->
+          <input id="name" name="name" class="form-control" type="text" placeholder="Your name" onkeydown="if (event.keyCode == 13) register();" />
+          <a id="register" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Register </a>
+        </div>
+        <div id="peerInput">
+          <!-- <label class="control-label" for="peer">Peer</label>-->
+          <input id="peer" name="peer" class="form-control" type="text" placeholder="Peer's name" onkeydown="if (event.keyCode == 13) call();">
+          <a id="call" href="#" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Call </a> 
+          <a id="terminate" href="#" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span> Stop </a> 
+          <a id="play" href="#" class="btn btn-warning"><span class="glyphicon glyphicon-play-circle"></span> Play Rec </a>
+        </div>
+        
+      </div>
+
+      <div class="left">
+        <div id="videoBig">
+          <video id="videoOutput" autoplay width="600px" height="440px"></video>
+        </div>
+        <div id="videoSmall">
+          <video id="videoInput" autoplay width="200px" height="140px"></video>
+        </div>
+      </div>
+       <!-- SEKCIA VIDEOHOVORU -->
+
+    </section>
+  </body>
+</html>
